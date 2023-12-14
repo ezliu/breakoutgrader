@@ -1,0 +1,349 @@
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+  <html>
+
+  <!-- ======================================================================= -->
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+  <script type="text/javascript">google.load("jquery", "1.3.2");</script>
+  <style type="text/css">
+    body {
+      font-family: "Crimson Text","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight:300;
+      font-size:18px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    pre {
+      background-color: #f6f8fa;
+      padding: 16px;
+    }
+
+    code {
+      font-family: "SFMono-Regular","Consolas","Liberation Mono","Menlo",monospace;
+      overflow: scroll;
+    }
+
+    h1 {
+      font-family: "Source Sans Pro";
+      font-weight:300;
+    }
+
+    div {
+      max-width: 95%;
+      margin:auto;
+      padding: 10px;
+    }
+
+    .table-like {
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+		.table-like hr {
+			width: 100%;
+      flex-basis: 100%;
+      height: 0;
+      margin: 0;
+      border: 0;
+		}
+
+    .disclaimerbox {
+      background-color: #eee;
+      border: 1px solid #eeeeee;
+      border-radius: 10px ;
+      -moz-border-radius: 10px ;
+      -webkit-border-radius: 10px ;
+      padding: 20px;
+    }
+
+    video.header-vid {
+      height: 140px;
+      border: 1px solid black;
+      border-radius: 10px ;
+      -moz-border-radius: 10px ;
+      -webkit-border-radius: 10px ;
+    }
+
+    img {
+      padding: 0;
+      display: block;
+      margin: 0 auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    iframe {
+      max-width: 100%;
+    }
+
+    img.header-img {
+      height: 140px;
+      border: 1px solid black;
+      border-radius: 10px ;
+      -moz-border-radius: 10px ;
+      -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+      border: 1px solid #eeeeee;
+      border-radius: 10px ;
+      -moz-border-radius: 10px ;
+      -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+      color: #1367a7;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #208799;
+    }
+
+    td.dl-link {
+      height: 160px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+      box-shadow:
+              0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+              5px 5px 0 0px #fff, /* The second layer */
+              5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+              10px 10px 0 0px #fff, /* The third layer */
+              10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+              15px 15px 0 0px #fff, /* The fourth layer */
+              15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+              20px 20px 0 0px #fff, /* The fifth layer */
+              20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+              25px 25px 0 0px #fff, /* The fifth layer */
+              25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+      margin-left: 10px;
+      margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+      box-shadow:
+              0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+              5px 5px 0 0px #fff, /* The second layer */
+              5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+              10px 10px 0 0px #fff, /* The third layer */
+              10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 30px;
+      margin-bottom: 5px;
+    }
+
+    .vert-cent {
+      position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+      border: 0;
+      height: 1px;
+      max-width: 1100px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    #authors td {
+      padding-bottom:5px;
+      padding-top:30px;
+    }
+  </style>
+  <!-- ======================================================================= -->
+
+  <!-- Start : Google Analytics Code -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64069893-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-64069893-4');
+  </script> -->
+  <!-- End : Google Analytics Code -->
+
+  <script type="text/javascript" src="resources/hidebib.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <head>
+  <div max-width=100%>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-180x180.png" />
+
+    <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-128.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="mask-icon" href="//www-media.stanford.edu/assets/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="application-name" content="Stanford University"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="//www-media.stanford.edu/assets/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="//www-media.stanford.edu/assets/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="//www-media.stanford.edu/assets/favicon/mstile-150x150.png" />
+    <meta name="msapplication-square310x310logo" content="//www-media.stanford.edu/assets/favicon/mstile-310x310.png" />
+    <title>A Fast and Accurate Machine Learning Autograder for the Breakout Assignment</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://ezliu.github.io/" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <meta property="og:site_name" content="Machine Learning Breakout Autograder" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="A Fast and Accurate Machine Learning Autograder for the Breakout Assignment" />
+  <meta property="og:description" content="Evan Z. Liu, David Yuan, Ahmed Ahmed, Elyse Cornwall, Juliette Woodrow, Kaylee Burns, Allen Nie, Emma Brunskill, Chris Piech, Chelsea Finn. A Fast and Accurate Machine Learning Autograder for the Breakout Assignment. 2023." />
+  <meta property="og:url" content="https://ezliu.github.io/breakoutgrader" />
+
+  <meta property="article:publisher" content="https://ezliu.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A Fast and Accurate Machine Learning Autograder for the Breakout Assignment" />
+  <meta name="twitter:description" content="Evan Z. Liu, David Yuan, Ahmed Ahmed, Elyse Cornwall, Juliette Woodrow, Kaylee Burns, Allen Nie, Emma Brunskill, Chris Piech, Chelsea Finn. A Fast and Accurate Machine Learning Autograder for the Breakout Assignment. 2023." />
+  <meta name="twitter:url" content="https://ezliu.github.io/breakoutgrader" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+</head>
+
+<body>
+
+      <br>
+      <center><span style="font-size:44px;font-weight:bold;font-family:Source Sans Pro;">A Fast and Accurate Machine Learning<br/>Autograder for the Breakout Assignment
+            </center><br/>
+      <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+          <div><center><span style="font-size:25px"><a href="https://ezliu.github.io" target="_blank">Evan Z. Liu</a></span></center>
+          <center><span style="font-size:25px">Stanford, Imbue</span></center>
+          </div>
+
+          <div><center><span style="font-size:25px"><a href="https://www.linkedin.com/in/dewei-yuan/" target="_blank">David Yuan</a></span></center>
+          <center><span style="font-size:25px">Stanford</span></center>
+          </div>
+
+          <div><center><span style="font-size:25px"><a href="https://www.linkedin.com/in/ahmed-ahmed-13914510a/" target="_blank">Ahmed Ahmed</a></span></center>
+          <center><span style="font-size:25px">Stanford</span></center>
+          </div>
+
+          <hr>
+
+          <div><center><span style="font-size:25px"><a href="https://www.linkedin.com/in/elysecornwall/" target="_blank">Elyse Cornwall</a></span></center>
+          <center><span style="font-size:25px">Stanford</span></center>
+          </div>
+
+          <div><center><span style="font-size:25px"><a href="https://www.linkedin.com/in/juliette-woodrow/" target="_blank">Juliette Woodrow</a></span></center>
+          <center><span style="font-size:25px">Stanford</span></center>
+          </div>
+
+          <div><center><span style="font-size:25px"><a href="https://kayburns.github.io/" target="_blank">Kaylee Burns</a></span></center>
+          <center><span style="font-size:25px">Stanford</span></center>
+          </div>
+
+          <div><center><span style="font-size:25px"><a href="https://anie.me/about" target="_blank">Allen Nie</a></span></center>
+          <center><span style="font-size:25px">Stanford</span></center>
+          </div>
+
+          <hr>
+
+          <div><center><span style="font-size:25px"><a href="https://cs.stanford.edu/people/ebrun/" target="_blank">Emma Brunskill</a></span></center>
+          <center><span style="font-size:25px">Stanford</span></center>
+          </div>
+
+          <div><center><span style="font-size:25px"><a href="https://stanford.edu/~cpiech/bio/index.html" target="_blank">Chris Piech</a></span></center>
+          <center><span style="font-size:25px">Stanford</span></center>
+          </div>
+
+          <div><center><span style="font-size:25px"><a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a></span></center>
+          <center><span style="font-size:25px">Stanford</span></center>
+          </div>
+
+          <hr>
+
+          <center><span style="font-size:25px" class="line-break">Technical Symposium on Computer Science Education (SIGCSE TS), 2023<br/></span></center>
+      </div>
+
+      <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
+        <div><center><span style="font-size:28px"><a href="">[Live Demo (coming soon!)]</a></span></center></div>
+        <div><center><span style="font-size:28px"><a href="https://ezliu.github.io/breakoutgrader.pdf">[Paper]</a></span></center></div>
+        <div><center><span style="font-size:28px"><a href='https://github.com/ezliu/breakoutgrader'>[Code]</a></span></center> </div>
+      </div>
+
+      <div style="width:800px; margin:0 auto" align="justify">
+        <p><b>Abstract.</b> In this paper, we detail the successful deployment
+          of a machine learning autograder that significantly decreases the
+          grading labor required in the Breakout computer science assignment.
+          This assignment — which tasks students with programming a game
+          consisting of a controllable paddle and a ball that bounces off the
+          paddle to break bricks — is popular for engaging students with
+          introductory computer science concepts, but creates a large grading
+          burden. Due to the game’s interactive nature, grading defies
+          traditional unit tests and instead typically requires 8+ minutes of
+          manually playing each student’s game to search for bugs. This amounts
+          to 45+ hours of grading in a standard course offering and prevents
+          further widespread adoption of the assignment. Our autograder
+          alleviates this burden by playing each student’s game with a
+          reinforcement learning agent and providing videos of discovered bugs
+          to instructors.  In an A/B test with manual grading, we find that our
+          human-in-the-loop AI autograder reduces grading time by 44%, while
+          slightly improving grading accuracy by 6%, ultimately saving roughly
+          30 hours over our deployment in two offerings of the assignment. Our
+          results further suggest the practicality of grading other interactive
+          assignments (e.g., other games or building websites) via similar
+          machine learning techniques.
+        </p>
+      </div>
+
+      <div style="width:800px; margin:0 auto; text-align=left", align="left">
+        <hr>
+        <center id="acknowledgements"><h1>Acknowledgements</h1></center>
+          <p>
+            We thank the volunteer graders who formed the comparison with
+            manual grading and Stanford CS106A course staff involved in the
+            live Spring and Summer 2023 deployments of our autograder:
+            Adarsh Ambati, Alex Gu, Allan Zhou, Allison John, Amy Guan, Ananya Kapoor,
+            Andrew Li, Andrew Wang, Annie Xie, Anthony Argyropoulos, Anushree Aggarwal,
+            Artur Carneiro, Ashna Khetan, Brent Ju, Butch Nasser, Calvin Laughlin, Chenchen
+            Gu, Chris Gregg, Chuyi Zhang, Colin Schultz, Daniel Rebelsky, Danny Park, Eban
+            Ebbsa, Ecy King, Everett Li, Fabio Ibanez, Frankie Cerkvenik, Gunnar Hanson,
+            Isabel Berny, Isabel Sieh, Jack Le, Javokhir Arifov, Jenna Kim, Justin
+            Blumencranz, Kaia Li, Kanoe Aiu, Kayla Ryan, Kenneth Ma, Kenny Dao, Kieran
+            Barrett, Kyle Hsu, Mehran Sahami, Michelle Gan, Miro Swisher, Naomi Boneh,
+            Natalie Shell, Nathan Chi, Niall Kehoe, Parker Stewart, Peter Benitez, Proud
+            Mpala, Rachel Hollett, Selaine Rodriguez, Shaurnav Ghosh, Sheena Lai, Soham
+            Konar, Spencer Wallace, Susan Ahmed, Tarini Mutreja, Tommy DeBenedetti, Uche
+            Ochuba, Usman Tariq, Viraj Mehta, William Huang, Zara Rutherford.
+          </p>
+          <p>
+            This website is adapted from
+            <a href="https://ezliu.github.io/dream/">this website</a>, which was
+            in turn adapted from
+            <a href="https://orybkin.github.io/video-gcp/">these</a>
+            <a href="https://pathak22.github.io/modular-assemblies/">websites</a>.
+            Feel free to use this website as a template for your own projects by referencing this!
+          </p>
+    </div>
+</body>
+</html>
